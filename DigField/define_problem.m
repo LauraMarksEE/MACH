@@ -16,12 +16,12 @@ function [A,muN,Core,FD]=define_problem(varargin)
 % Define core physical dimensions (in metres)
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Height1=0.014; % [m]
-Height2=; % [m]
-Height3=; % [m]
-Height4=0.014; % [m]
-Width1=;  % [m]
-Width2=;  % [m]
-Depth=;   % [m]
+Height2= 0.007; % [m]
+Height3= 0.007; % [m]
+Height4= 0.014; % [m]
+Width1=0.035;  % [m]
+Width2=0.035;  % [m]
+Depth=0.042;   % [m]
 
 % Define material properties
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,13 +32,13 @@ mu_iron=mu_air*mu_relative;% Don't change this line
 
 % Define finite difference method parameters
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NumIterations=;  % Number of iterations to perform
-NodeDensity=;   % Num nodes per meter
+NumIterations=500;  % Number of iterations to perform
+NodeDensity=1000;   % Num nodes per meter
 
 % Define excitation
 % ~~~~~~~~~~~~~~~~~
-I=;           % Excitation current [A]
-nTurns=;    % Number of turns in the coil
+I=5;           % Excitation current [A]
+nTurns=350;    % Number of turns in the coil
 
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %                  S T O P

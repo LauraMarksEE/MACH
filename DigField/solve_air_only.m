@@ -25,14 +25,14 @@ end
 for m=Core.iH2:Core.iH3-1,
    for n=Core.iW2:Core.iW4-1,
       % - Type the finite difference equation immediately below this line -
-      
+      newVm(m,n)=(Vm(m-1,n)+Vm(m,n-1)+Vm(m+1,n)+Vm(m,n+1))/4;
    end
 end
 %Solve second part of the airgap
 for m=Core.iH3:Core.iH4-1,
    for n=2:Core.iW4-1,
       % - Type the finite difference equation immediately below this line -
-      
+      newVm(m,n)=(Vm(m-1,n)+Vm(m,n-1)+Vm(m+1,n)+Vm(m,n+1))/4;
    end
 end
 
